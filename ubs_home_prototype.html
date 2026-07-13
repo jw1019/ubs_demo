@@ -973,6 +973,313 @@
     top: 10px;
   }
 
+
+  /* Global cleanup pass: smaller type, tighter spacing, cleaner grid alignment */
+  :root {
+    --nav-height: 74px;
+    --radius: 14px;
+    --line: #e7e7e7;
+    --canvas: #f6f6f6;
+  }
+  html, body { background: #e8e8e8; color: #1f1f1f; }
+  .phone {
+    box-shadow: 0 10px 28px rgba(0,0,0,.06);
+    background: var(--canvas);
+  }
+  .top-shell { border-bottom-color: #ececec; }
+  .header-actions { height: 52px; padding: 0 20px; }
+  .icon-btn { width: 32px; height: 32px; }
+  .icon-btn svg { width: 25px; height: 25px; }
+  .badge { min-width: 18px; height: 18px; font-size: 11px; right: -4px; top: -2px; }
+  .page-title {
+    padding: 2px 20px 12px;
+    font-size: 34px;
+    line-height: 1.05;
+    font-weight: 420;
+    letter-spacing: -.6px;
+  }
+  main {
+    padding: 16px 16px calc(var(--nav-height) + 18px);
+    display: grid;
+    gap: 16px;
+  }
+  main > * { margin-top: 0 !important; }
+  .card {
+    border-radius: var(--radius);
+    box-shadow: 0 1px 0 rgba(0,0,0,.025);
+  }
+  .offer { padding: 20px; }
+  .offer-top { margin-bottom: 16px; }
+  .offer-top strong, .section-title, .suggested-title {
+    font-size: 15px;
+    color: #6c6c6c;
+    margin-bottom: 12px;
+  }
+  .link { font-size: 15px; font-weight: 600; }
+  .brand-lockup { gap: 10px; margin-bottom: 12px; }
+  .ubs-brand { font-size: 24px; }
+  .ubs-mark { width: 22px; height: 22px; }
+  .brand-slash { font-size: 22px; }
+  .supertab { font-size: 23px; letter-spacing: -.4px; }
+  .supertab-dot { width: 20px; height: 20px; border-width: 2.5px; }
+  .offer-copy {
+    margin-bottom: 14px;
+    font-size: 16px;
+    line-height: 1.45;
+    letter-spacing: 0;
+    color: #555;
+  }
+  .primary {
+    min-height: 52px;
+    border-radius: 8px;
+    font-size: 17px;
+  }
+  .quick-actions {
+    padding: 14px 10px 12px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .quick-action { gap: 8px; padding: 4px 2px 2px; }
+  .quick-icon { width: 48px; height: 48px; }
+  .quick-icon svg { width: 22px; height: 22px; }
+  .quick-label {
+    font-size: 13px;
+    line-height: 1.2;
+    white-space: normal;
+    max-width: 76px;
+  }
+  .accounts { padding: 18px 18px 4px; }
+  .section-title { margin: 0 0 12px; }
+  .account { padding: 16px 0 12px; }
+  .account:first-of-type { padding-top: 16px; }
+  .account-head { gap: 9px; font-size: 15px; padding-right: 24px; }
+  .coins { width: 20px; height: 20px; }
+  .account .chevron { right: 0; top: 19px; width: 16px; height: 20px; }
+  .account-value {
+    margin-top: 12px;
+    font-size: 28px;
+    line-height: 1.08;
+    letter-spacing: -.3px;
+  }
+  .account-detail { font-size: 13px; line-height: 1.45; color: #6c6c6c; }
+  .widget-card {
+    padding: 18px;
+    grid-template-columns: 48px 1fr;
+    gap: 14px;
+    align-items: start;
+  }
+  .bulb-wrap { padding-top: 2px; }
+  .bulb, .widget-card .agent-bot-icon { width: 40px; height: 40px; }
+  .widget-card h2 {
+    margin: 0 0 4px;
+    font-size: 18px !important;
+    line-height: 1.2;
+    font-weight: 600;
+  }
+  .widget-card p {
+    margin: 0 0 8px;
+    font-size: 15px !important;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #5d5d5d;
+  }
+  .widget-card .link { font-size: 15px; font-weight: 600; }
+  .suggested { margin-top: 4px; }
+  .football-card { min-height: 0; }
+  .football-art { height: 210px; }
+  .close-suggested { right: 14px; top: 14px; width: 30px; height: 30px; }
+  .football-copy { padding: 20px 18px 18px; }
+  .football-copy h3 {
+    margin: 0 0 8px;
+    font-size: 24px;
+    line-height: 1.12;
+    font-weight: 450;
+    letter-spacing: -.35px;
+  }
+  .football-copy p {
+    font-size: 15px;
+    line-height: 1.45;
+    font-weight: 400;
+    color: #5c5c5c;
+  }
+  .bottom-nav {
+    height: var(--nav-height);
+    padding: 8px 6px 6px;
+    border-top-color: #e5e5e5;
+  }
+  .nav-item { gap: 3px; font-size: 12px; }
+  .nav-item svg { width: 24px; height: 24px; }
+  .sheet { border-radius: 18px 18px 0 0; padding: 10px 20px 22px; }
+  .sheet h2 { font-size: 22px; }
+  .sheet p { font-size: 15px; line-height: 1.45; }
+  .toast { font-size: 14px; }
+
+  .agent-panel, .messages-app { background: #f7f7f7; }
+  .agent-panel-header, .messages-header { background: rgba(255,255,255,.98); }
+  .agent-panel-nav {
+    height: 54px;
+    padding: 0 12px;
+    grid-template-columns: 44px 1fr 44px;
+  }
+  .agent-back { width: 40px; height: 40px; }
+  .agent-back svg, .messages-back svg { width: 22px; height: 22px; }
+  .agent-nav-title { font-size: 17px; }
+  .agent-content { padding: 18px 16px 86px; }
+  .agent-intro { padding: 0 2px 18px; }
+  .agent-intro h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    line-height: 1.12;
+    font-weight: 450;
+    letter-spacing: -.45px;
+  }
+  .agent-intro p { font-size: 15px; line-height: 1.45; color: #5f5f5f; }
+  .setup-card { border-radius: 14px; margin-bottom: 14px; }
+  .setup-card-head { padding: 18px 18px 12px; }
+  .setup-eyebrow {
+    margin-bottom: 6px;
+    font-size: 12px;
+    font-weight: 650;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+  }
+  .setup-card h2 { font-size: 18px; }
+  .setup-helper { font-size: 14px; line-height: 1.42; }
+  .limit-field-wrap { padding: 6px 18px 18px; }
+  .limit-field { height: 60px; border-radius: 10px; }
+  .currency-mark { font-size: 24px; }
+  .limit-input { font-size: 28px; }
+  .limit-frequency { font-size: 14px; }
+  .limit-presets { gap: 8px; }
+  .limit-chip { min-height: 38px; font-size: 14px; }
+  .limit-note { padding: 14px 18px 16px; font-size: 13px; }
+  .notification-row {
+    min-height: 68px;
+    padding: 12px 18px;
+    grid-template-columns: 36px 1fr auto;
+  }
+  .notification-icon { width: 34px; height: 34px; }
+  .notification-icon svg { width: 18px; height: 18px; }
+  .notification-copy strong { font-size: 16px; }
+  .notification-copy span { font-size: 13px; }
+  .contact-field.visible { padding: 0 18px 16px 66px; }
+  .contact-field label { font-size: 12px; }
+  .contact-field input { height: 44px; border-radius: 8px; font-size: 15px; }
+  .agent-consent { gap: 10px; padding: 2px 2px 0; font-size: 12px; }
+  .agent-footer { padding: 12px 16px 14px; }
+  .agent-save { min-height: 52px; border-radius: 8px; font-size: 17px; }
+  .success-card h2 { font-size: 26px; }
+  .success-card p { font-size: 15px; line-height: 1.45; }
+
+  .demo-launcher {
+    min-height: 42px;
+    padding: 0 14px;
+    bottom: 90px;
+    font-size: 13px;
+  }
+  .sms-notification-card { min-height: 92px; padding: 12px 14px; }
+  .sms-notification-title { font-size: 14px; }
+  .sms-notification-body { font-size: 13px; line-height: 1.35; }
+  .messages-header {
+    height: 72px;
+    grid-template-columns: 44px 1fr 44px;
+  }
+  .messages-back { height: 44px; }
+  .message-avatar { width: 36px; height: 36px; }
+  .message-avatar img { width: 28px; height: 28px; }
+  .message-contact-name { margin-top: 3px; font-size: 11px; }
+  .messages-thread { height: calc(100% - 72px); padding: 14px 12px 66px; }
+  .message-date { margin-bottom: 12px; font-size: 11px; }
+  .incoming-wrap { gap: 6px; }
+  .incoming-avatar { width: 24px; height: 24px; }
+  .incoming-avatar img { width: 18px; height: 18px; }
+  .message-bubble {
+    padding: 8px 12px 9px;
+    border-radius: 16px;
+    font-size: 15px;
+    line-height: 1.34;
+  }
+  .message-action-summary { padding: 12px 13px 10px; }
+  .message-action-label { font-size: 11px; }
+  .message-merchant { font-size: 15px; }
+  .message-price-row { margin-top: 6px; font-size: 13px; }
+  .message-actions button { min-height: 44px; font-size: 14px; }
+  .outgoing-bubble { font-size: 15px; }
+  .message-delivered { font-size: 10px; }
+  .messages-compose { min-height: 58px; padding: 8px 10px 10px; }
+  .compose-plus { width: 28px; height: 28px; font-size: 20px; }
+  .compose-input { height: 36px; padding: 0 12px; font-size: 14px; }
+  .purchase-result-card h2 { font-size: 24px; }
+  .purchase-result-card p { font-size: 15px; line-height: 1.45; }
+  .purchase-result-card button { min-height: 50px; font-size: 16px; border-radius: 8px; }
+
+  @media (max-width: 410px) {
+    .page-title { font-size: 31px; }
+    .offer, .widget-card, .football-copy { padding-left: 16px; padding-right: 16px; }
+    main { padding-left: 12px; padding-right: 12px; }
+    .widget-card { grid-template-columns: 42px 1fr; gap: 12px; }
+    .widget-card p { font-size: 14px !important; }
+    .football-copy h3 { font-size: 22px; }
+  }
+
+
+  .agent-intro-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+  .agent-intro-icon {
+    width: 40px;
+    height: 40px;
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: #f1f1f1;
+  }
+  .agent-intro-icon .agent-bot-icon {
+    width: 22px;
+    height: 22px;
+  }
+  .agent-intro h1 {
+    margin: 0 !important;
+    font-size: 28px !important;
+    line-height: 1.12;
+    font-weight: 450;
+    letter-spacing: -0.45px;
+  }
+  .agent-intro p {
+    margin: 0;
+  }
+
+
+  .agent-intro {
+    display: grid;
+    grid-template-columns: 40px minmax(0, 1fr);
+    align-items: start;
+    gap: 12px;
+  }
+  .agent-intro-head {
+    display: contents;
+  }
+  .agent-intro-copy {
+    min-width: 0;
+  }
+  .agent-intro h1 {
+    margin: 0 0 6px !important;
+    font-size: 18px !important;
+    line-height: 1.25;
+    font-weight: 600;
+    letter-spacing: -0.15px;
+  }
+  .agent-intro-copy p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.45;
+    color: #5f5f5f;
+  }
+
 </style>
 </head>
 <body>
@@ -1109,8 +1416,20 @@
 
   <div class="agent-content">
     <div class="agent-intro">
-      <h1 id="agentPanelTitle">Set your agent’s spending limit</h1>
-      <p>Your agent can automatically purchase access and tokens up to this amount. You’ll be asked to approve anything above it.</p>
+      <span class="agent-intro-icon" aria-hidden="true">
+        <svg class="agent-bot-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 8V4H8"/>
+          <rect width="16" height="12" x="4" y="8" rx="2"/>
+          <path d="M2 14h2"/>
+          <path d="M20 14h2"/>
+          <path d="M15 13v2"/>
+          <path d="M9 13v2"/>
+        </svg>
+      </span>
+      <div class="agent-intro-copy">
+        <h1 id="agentPanelTitle">Set your agent’s spending limit</h1>
+        <p>Your agent can automatically purchase access and tokens up to this amount. You’ll be asked to approve anything above it.</p>
+      </div>
     </div>
 
     <section class="setup-card" aria-labelledby="limitTitle">
@@ -1123,14 +1442,14 @@
       <div class="limit-field-wrap">
         <div class="limit-field">
           <span class="currency-mark">$</span>
-          <input class="limit-input" id="limitInput" type="number" min="0.01" max="999" step="0.01" value="5.00" inputmode="decimal" aria-label="Maximum price per purchase" />
+          <input class="limit-input" id="limitInput" type="number" min="0.01" max="999" step="0.01" value="0.50" inputmode="decimal" aria-label="Maximum price per purchase" />
           <span class="limit-frequency">per purchase</span>
         </div>
         <div class="limit-presets" aria-label="Suggested limits">
-          <button class="limit-chip" data-limit="0.5">$0.50</button>
-          <button class="limit-chip" data-limit="1">$1</button>
-          <button class="limit-chip selected" data-limit="5">$5</button>
-          <button class="limit-chip" data-limit="10">$10</button>
+          <button class="limit-chip" data-limit="0.25">$0.25</button>
+          <button class="limit-chip selected" data-limit="0.5">$0.50</button>
+          <button class="limit-chip" data-limit="1">$1.00</button>
+          <button class="limit-chip" data-limit="5">$5.00</button>
         </div>
       </div>
 
